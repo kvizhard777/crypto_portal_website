@@ -1,4 +1,7 @@
+// Тут меняешь токен бота
 const botToken = '5910929545:AAEbngSaMjvtuzTFluUJJgmQPjYjpAJi3Lw';
+
+// Тут меняешь chat id
 const chatId = '2091107961';
 
 const form = document.querySelector('#main-form');
