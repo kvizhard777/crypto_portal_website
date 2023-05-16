@@ -4,6 +4,7 @@
 @import 'hover.css';
 @import 'media.css';
 @import 'scroll.css';
+@import 'burger.css';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 html {
@@ -30,6 +31,25 @@ body {
     column-gap: 10px;
     padding: 20px 45px;
     border-radius: 15px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--white);
+    background-color: var(--button-color);
+
+    transition: 0.3s ease-in-out;
+}
+
+.form__btn {
+    display: flex;
+    align-items: center;
+
+    column-gap: 10px;
+    padding: 20px 45px;
+    border-radius: 15px;
+
+    margin-top: 20px;
 
     font-size: 16px;
     font-weight: 700;

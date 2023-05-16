@@ -30,9 +30,9 @@
                     </ul>
 
                     <!-- BUTTON -->
-                    <a href="#" class="main__btn">Связаться
+                    <button class="main__btn">Связаться
                         <img src="img/icons/chevron-right.svg" alt="Right" class="main__btn-img">
-                    </a>
+                    </button>
 
                 </div>
 
@@ -49,9 +49,9 @@
                             </div>
 
                             <div class="main__btn--wrapper">
-                                <a href="#" class="main__btn">Связаться
+                                <button class="main__btn">Связаться
                                     <img src="img/icons/chevron-right.svg" alt="Right" class="main__btn-img">
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -166,9 +166,9 @@
                     <div class="footer__logo">CryptoPortal</div>
 
                     <div class="footer__btn--wrapper">
-                        <a href="#" class="main__btn">Связаться
+                        <button class="main__btn">Связаться
                             <img src="img/icons/chevron-right.svg" alt="Right" class="main__btn-img">
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -177,8 +177,39 @@
         </div>
     </footer>
 
+    <!-- FORM -->
+    <div class="popup__overlay" id="popup-overlay">
+        <div class="popup__content">
+            <button class="popup__close-btn" id="popup-close-btn">×</button>
+
+            <div class="form--wrapper">
+
+                <form class="form" id="main-form" onsubmit="return sendtelegram()">
+                    <h2 class="form__title">Оставить заявку</h2>
+    
+                    <div class="form__input--wrapper">
+                        <img src="img/icons/user.svg" alt="User" class="form__input-img">
+                        <input type="text" class="form__input" name="username" id="form-username" placeholder="Введите ваше имя" autocomplete="off">
+                    </div>
+    
+                    <div class="form__input--wrapper">
+                        <img src="img/icons/whatsapp.svg" alt="Whatsapp" class="form__input-img">
+                        <input type="number" class="form__input no-spinners" name="phone" id="form-phone" placeholder="Ваш номер Whatsapp" autocomplete="off">
+                    </div>
+    
+                    <button class="form__btn" id="form-btn">Оставить заявку
+                        <img src="img/icons/chevron-right.svg" alt="Right" class="main__btn-img">
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
     <!-- JS LINK -->
     <script src="js/main.js"></script>
+    <script src="js/send.js"></script>
 
 </body>
 </html>

@@ -114,25 +114,13 @@
     color: var(--light-black);
 }
 
-/* Background Images */
-.binance__img {
-    position: absolute;
-
-    left: 900px;
-    top: 624px;
-}
-
-/* Conditions Section */
-.conditions__section {
-    margin-top: 80px;
-}
-
 /* Conditions Section Title */
 .conditions__section-title--wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 
+    margin-top: 70px;
     column-gap: 35px;
 }
 
@@ -216,6 +204,101 @@
 .footer__logo {
     font-size: 24px;
     font-weight: 800;
+
+    color: var(--black);
+}
+
+/* Form */
+.form--wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 50px;
+}
+
+.form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    row-gap: 20px;
+}
+
+.form__title {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    font-weight: 800;
+    
+    color: var(--black);
+}
+
+.form__input--wrapper {
+    display: flex;
+    align-items: center;
+
+    column-gap: 15px;
+}
+
+.form__input {
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 15px 20px;
+
+    border-radius: 15px;
+    border: 1px solid var(--black);
+
+    color: var(--black);
+}
+
+.form__input-img {
+    width: 48px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+/* Form Popup */
+.popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup__content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 60px;
 
     color: var(--black);
 }

@@ -11,3 +11,9 @@
     background-color: var(--button-color-dark);
     transition: 0.3s ease-in-out;
 }
+
+/* Form Button */
+.form__btn:hover {
+    background-color: var(--button-color-dark);
+    transition: 0.3s ease-in-out;
+}
