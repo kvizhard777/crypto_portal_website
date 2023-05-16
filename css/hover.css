@@ -1,0 +1,13 @@
+/* Heade Menu Link */
+.header__menu-link:hover {
+    color: var(--black);
+    background-color: var(--white);
+
+    transition: 0.2s ease-in-out;
+}
+
+/* Main Button */
+.main__btn:hover {
+    background-color: var(--button-color-dark);
+    transition: 0.3s ease-in-out;
+}

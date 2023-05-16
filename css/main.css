@@ -1,0 +1,64 @@
+@import 'reset.css';
+@import 'vars.css';
+@import 'style.css';
+@import 'hover.css';
+@import 'media.css';
+@import 'scroll.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--white);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Button */
+
+.main__btn {
+    display: flex;
+    align-items: center;
+
+    column-gap: 10px;
+    padding: 20px 45px;
+    border-radius: 15px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--white);
+    background-color: var(--button-color);
+
+    transition: 0.3s ease-in-out;
+}
+
+/* Major Tags */
+
+.header {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
