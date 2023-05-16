@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoPortal - Вакансия</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/main.css">
@@ -177,24 +178,25 @@
         </div>
     </footer>
 
-    <!-- FORM -->
+    <!-- POPUP -->
     <div class="popup__overlay" id="popup-overlay">
         <div class="popup__content">
             <button class="popup__close-btn" id="popup-close-btn">×</button>
 
+            <!-- FORM -->
             <div class="form--wrapper">
 
-                <form class="form" id="main-form" onsubmit="return sendtelegram()">
+                <form class="form" id="main-form" onsubmit="return sendTelegram()">
                     <h2 class="form__title">Оставить заявку</h2>
     
                     <div class="form__input--wrapper">
                         <img src="img/icons/user.svg" alt="User" class="form__input-img">
-                        <input type="text" class="form__input" name="username" id="form-username" placeholder="Введите ваше имя" autocomplete="off">
+                        <input type="text" class="form__input" name="username" id="form-username" placeholder="Введите ваше имя" autocomplete="off" required>
                     </div>
     
                     <div class="form__input--wrapper">
                         <img src="img/icons/whatsapp.svg" alt="Whatsapp" class="form__input-img">
-                        <input type="number" class="form__input no-spinners" name="phone" id="form-phone" placeholder="Ваш номер Whatsapp" autocomplete="off">
+                        <input type="number" class="form__input no-spinners" name="phone" id="form-phone" placeholder="Ваш номер Whatsapp" autocomplete="off" required>
                     </div>
     
                     <button class="form__btn" id="form-btn">Оставить заявку
