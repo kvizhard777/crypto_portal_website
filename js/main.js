@@ -1,5 +1,5 @@
 // Popup Menu
-const mainBtns = document.querySelectorAll('.main__btn');
+const mainBtns = document.querySelectorAll('.buttons');
 const popupOverlay = document.getElementById('popup-overlay');
 const popupCloseBtn = document.getElementById('popup-close-btn');
 
